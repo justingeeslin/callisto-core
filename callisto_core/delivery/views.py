@@ -13,6 +13,7 @@ views should define:
 '''
 from django.contrib.auth import views as auth_views
 
+from .settings import *  # NOQA
 from . import view_partials
 
 ################
