@@ -13,7 +13,6 @@ views should define:
 '''
 from django.contrib.auth import views as auth_views
 
-from .settings import *  # NOQA
 from . import view_partials
 
 ################
@@ -26,7 +25,7 @@ class LoginView(
 ):
     template_name = 'callisto_core/delivery/login.html'
     # A configurable site name; for now lets just he app name
-    site_name = os.getenv('HEROKU_APP_NAME')
+    site_name = 'My first Callisto site'
 
 
 ################
