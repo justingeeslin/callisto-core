@@ -24,6 +24,8 @@ class LoginView(
     auth_views.LoginView,
 ):
     template_name = 'callisto_core/delivery/login.html'
+    # A configurable site name; for now lets just he app name
+    site_name = os.getenv('HEROKU_APP_NAME')
 
 
 ################
